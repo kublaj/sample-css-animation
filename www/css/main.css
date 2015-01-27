@@ -1,0 +1,599 @@
+na/******************GLOBAL**************************/
+@-ms-viewport {
+    width: device-width;
+}
+
+html { 
+    width:100%; height:100%;
+	overflow-x:hidden;
+	font-family:Helvetica, Arial, sans-serif; 
+	-webkit-text-size-adjust:100%; 
+}
+
+* { 
+    margin:0; padding:0; 
+	-webkit-box-sizing:border-box; box-sizing:border-box;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-touch-action:none;
+}
+
+img { 
+    border:none; 
+}
+
+body {
+	width:100%;	height:100%;
+    overflow:hidden;
+    -webkit-user-select:none;
+    font-family:"AmbleRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input,textarea {
+    -webkit-user-select:text;
+    -moz-user-select:text;
+}
+
+::selection { 
+	background:#aaa; 
+	color:#fff; 
+}
+
+a:focus, a:active, a:hover { 
+    outline:0; 
+}
+
+.clear { 
+    clear:both; 
+}
+
+.wrapper { 
+    float:left; 
+}
+
+/******************* SMARTPHONE [DEFAULT STYLES] **************************/
+.masthead {
+	background-color:white;
+    height:50px;
+}
+
+.logo {
+    float:left;
+    margin:10px;
+}
+
+.content {
+    display:block;
+    width:100%; height:100%;
+	background-image:-webkit-gradient(linear,color-stop(0.01, rgb(0,84,154)),color-stop(0.16, rgb(2,90,160)),color-stop(1, rgb(11,125,193)));
+	background-image:-webkit-linear-gradient(rgb(0,84,154) 1%,rgb(2,90,160) 16%,rgb(11,125,193) 100%);
+	background-image:-ms-linear-gradient(rgb(0,84,154) 1%,rgb(2,90,160) 16%,rgb(11,125,193) 100%);
+	background-image:linear-gradient(rgb(0,84,154) 1%,rgb(2,90,160) 16%,rgb(11,125,193) 100%);
+	background:rgb(0,84,154) url("../images/swoops.png") no-repeat;
+    background-position:bottom center;
+    -webkit-background-size:cover; background-size:cover;
+}
+
+.button {
+    display:inline-block;
+    position:absolute;
+    top:50%; left:50%;
+    background-color:#a6a8aB;
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(85%,rgba(255,255,255,0)));
+    background-image:-webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 85%);
+    background-image:-ms-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 85%);
+    background-image:linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0)85%);
+	width:89px;height:34px;
+	border:1px solid white;
+	-webkit-border-radius:8px; border-radius:8px;
+	-webkit-box-shadow:0px 1px 8px rgba(0,0,0,0.65); box-shadow:0px 1px 8px rgba(0,0,0,0.65);
+	font-family:inherit;
+    font-size:21px;
+	line-height:170%;
+    text-align:center;
+	color:rgb(17,125,193);
+	cursor:pointer;
+	text-shadow:0 1px 0 white;
+    -webkit-transition:background-color 0.2s ease; transition:background-color 0.2s ease;
+}
+
+.button:active, .button:focus { 
+    background-color:#fff; 
+}
+
+#happybutton {
+    margin-top: 80px;
+    margin-left: -150px;
+}
+
+#sadbutton {
+    margin-left: -45px;
+    margin-top: 80px;
+}
+
+#madbutton {
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+#shockedbutton {
+    margin-top: 130px;
+    margin-left: -150px;
+}
+
+#scaredbutton {
+    margin-top: 130px;
+    margin-left: -45px;
+}
+
+#elatedbutton {
+    margin-left: 60px;
+    margin-top: 130px;
+}
+
+.ball { 
+    transition:opacity .3s; 
+    width:260px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -160px;
+}
+
+.face {
+    display:inline-block;
+    width:200px;
+    height:200px;
+    background:rgb(23,147,219);
+    padding:40px;
+    border:rgb(7,92,143) 1px solid;
+    box-shadow:inset -5px -15px rgba(0,0,0,.07);
+    -webkit-border-radius:100px;
+    -ms-border-radius:100px;
+    border-radius:50%;
+    -webkit-animation:wobble 3s ease-in-out infinite;
+    -ms-animation:wobble 3s ease-in-out infinite;
+    -webkit-transform-origin:center bottom;
+    -ms-transform-origin:center bottom;
+    transition:padding .3s, bottom .3s;
+    text-align:center;
+}
+
+@-webkit-keyframes wobble { 
+    0% { 
+        -webkit-transform:rotate(-5deg); 
+    }
+    50% { 
+        -webkit-transform:rotate(5deg); 
+    } 
+    100% { 
+        -webkit-transform:rotate(-5deg); 
+    } 
+}
+@-ms-keyframes wobble { 
+    0% { 
+        -ms-transform:rotate(-5deg); 
+    }
+    50% { 
+        -ms-transform:rotate(5deg); 
+    } 
+    100% { 
+        -ms-transform:rotate(-5deg); 
+    } 
+}
+
+face:hover { 
+    padding:30px 40px; 
+}
+
+.eyes {
+    display:inline-block;
+    width:10px;
+    height:15px;
+    margin:0 5px 5px;
+    background:rgba(0,0,0,.9);
+    border-radius:10px;
+    border-radius:50%;
+    -webkit-animation: blink 3s ease-in-out infinite;
+    -ms-animation: blink 3s ease-in-out infinite;
+}
+    
+@-webkit-keyframes blink {
+    90% { 
+        height:15px; margin:0 5px 5px; 
+    }
+    95% { 
+        height:1px; margin:10px 5px 10px; 
+    } 
+}
+@-ms-keyframes blink {
+    90% { 
+        height:15px; margin:0 5px 5px; 
+    }
+    95% { 
+        height:1px; margin:10px 5px 10px; 
+    } 
+}
+    
+.mouth {
+    display:block;
+    width:100%;
+    height:10px;
+    margin:5px auto 0;
+    background:rgba(0,0,0,.9);
+    border-radius:3px 3px 100px 100px;
+    border-radius:3px 3px 50% 50%;
+    transition:border-radius .5s, height .5s cubic-bezier(.15,.60,.30,1.9);
+    overflow:hidden;
+    line-height:0;
+}
+
+.shadow {
+    height:40px;
+    background:rgba(0,0,0,.1);
+    width:220px;
+    border: none;
+    border-radius: 50%;
+    -moz-border-radius: 90px / 20px;
+    -webkit-border-radius: 90px / 20px;
+    border-radius: 90px / 20px;
+    border-radius: 100%;
+    margin:-20px 10px 30px;
+    transition:.3s;
+    -webkit-animation: shadow 3s ease-in-out infinite;
+    -ms-animation: shadow 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes shadow {
+    0% { margin:-20px 10px 30px -10px; }
+    50% { margin:-20px -10px 30px 10px; } 
+    100% { margin:-20px 10px 30px -10px; } 
+} 
+@-ms-keyframes shadow {
+    0% { margin:-20px 10px 30px -10px; }
+    50% { margin:-20px -10px 30px 10px; } 
+    100% { margin:-20px 10px 30px -10px; } 
+} 
+
+.face.happy { 
+    animation:wobble 2s infinite; 
+}
+.face.happy .mouth { 
+    height:35px; 
+    border-radius:3px 3px 100px 100px; 
+    border-radius:3px 3px 75% 75%; 
+}
+.face.happy .mouth.happymouth { 
+    height:20px;
+}
+.face.happy .eyes.happyeyes { 
+    border-radius:10px 10px 3px 3px; 
+    height:10px; transition:.3s; 
+    -webkit-animation: none; 
+}
+
+.face.sad { 
+    animation:wobble 2s infinite; 
+}
+.face.sad .mouth { 
+    height:15px; 
+    width: 110px; 
+    border-radius:110px 110px 3px 3px; 
+    border-radius:60% 60% 3px 3px; 
+}
+.face.sad .mouth.sadmouth { 
+    height:8px; 
+}
+
+.face.mad { 
+    animation:wobble 2s infinite; 
+}
+.face.mad .mouth.madmouth {
+    height:7px;
+    -webkit-transition:.25s ease-in-out;
+    transition:.25s ease-in-out; 
+}
+.face.mad .eyes { 
+    border-radius: 0 0 8px 8px;
+}
+.face.mad .eyes.madeyes {
+    height:8px;
+    -webkit-transition:.25s ease-in-out;
+    transition:.25s ease-in-out; 
+    -webkit-animation: none; 
+}
+
+.face.scared { 
+    animation:wobble 2s infinite; 
+}
+.face.scared .mouth { 
+    height:20px; 
+    width:15px; 
+    border-radius: 50%; 
+}
+.face.scared .mouth.scaredmouth {
+    height:95px; 
+    width:70px;
+     border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+    -webkit-transition:.2s ease-in-out;
+    transition:.2s ease-in-out; 
+}
+.face.scared .eyes.scaredeyes {
+    height:30px;
+    width:15px; 
+    transition:.3s; 
+    box-shadow: 0 -3px 0 rgb(23,147,219), 0 -5px 0 black; 
+    -webkit-transition:.2s ease-in-out;
+    transition:.2s ease-in-out;
+    -webkit-animation: none; 
+}
+
+.face.shocked { animation:wobble 2s infinite; }
+.face.shocked .mouth { border-radius: 50%;}
+.face.shocked .mouth.shockedmouth {
+    height:10px; 
+    width:10px; 
+    transition:.2s ease-in-out;
+}
+.face.shocked .eyes.shockedeyes {
+    height: 40px; 
+    width: 40px; 
+    box-shadow: 0 3px 0 rgb(23,147,219), 0 4px 0 black; 
+    -webkit-transition:.2s ease-in-out;
+    transition:.2s ease-in-out; 
+    -webkit-animation: none; 
+}
+
+.face.elated { animation:wobble 2s infinite; }
+.face.elated .mouth { 
+    height:80px; 
+    border-radius:5px 5px 50% 50%; 
+}
+.face.elated .mouth.elatedmouth {
+    height:60px;
+}
+.face.elated .eyes.elatedeyes {
+    height:3px; 
+    width:22px;
+    -webkit-transition:.25s ease-in-out;
+    transition:.25s ease-in-out; 
+    -webkit-animation: none; 
+}
+
+/************************ TABLET **************************/
+/*@media handheld, only screen and (min-width:768px) {*/
+@media handheld,  screen and (min-width: 600px) and (min-height:640px), 
+only screen and (min-height: 440px) and (min-width:900px) {
+
+    .masthead { 
+        height:75px; 
+    }
+
+    .logo {
+        width:84px;
+        height:55px;
+        margin:10px;   
+    }
+
+    .content { 
+        background:rgb(0,84,154) url("../images/swoops-lg.png") no-repeat;
+        background-position:bottom center;
+        -webkit-background-size:cover;background-size:cover;
+    }
+
+    .button {
+        width:185px;height:78px;
+        border-width:2px;
+        -webkit-box-shadow:0px 1px 12px rgba(0,0,0,0.65);
+        box-shadow:0px 1px 12px rgba(0,0,0,0.65);
+        font-size: 45px;
+        -webkit-border-radius:16px; border-radius:16px;
+        text-shadow:0 2px 0px rgb(255,255,255);
+    }
+
+    #happybutton {
+        margin-top: 290px;
+        margin-left: -290px;
+    }
+
+    #sadbutton {
+        margin-top: 290px;
+        margin-left: -90px;
+    }
+
+    #madbutton {
+        margin-left: 106px;
+        margin-top: 290px;
+    }
+
+    #shockedbutton {
+        margin-top: 400px;
+        margin-left: -290px;
+    }
+
+    #scaredbutton {
+        margin-top: 400px;
+        margin-left: -90px;
+    }
+
+    #elatedbutton {
+        margin-left: 106px;
+        margin-top: 400px;
+    }
+
+    .ball {
+        width:520px;
+        margin-left:-200px; 
+        margin-top:-330px;
+    }
+
+    .face {
+        width:400px;
+        height:400px;
+        padding:80px;
+        border:rgb(7,92,143) 2px solid;
+        box-shadow:inset -10px -30px rgba(0,0,0,.07);
+        -webkit-border-radius:200px;
+        -ms-border-radius:200px;
+    }
+
+    face:hover { 
+        padding:60px 80px; 
+    }
+
+    .eyes {
+        width:20px;
+        height:30px;
+        margin:0 10px 10px;
+        border-radius:20px;
+    }
+    
+    @-webkit-keyframes blink {
+        90% { 
+            height:30px; margin:0 10px 10px; 
+        }
+        95% { 
+            height:2px; margin:20px 10px 20px; 
+        } 
+    }
+    @-ms-keyframes blink {
+        90% { 
+            height:30px; margin:0 10px 10px; 
+        }
+        95% { 
+            height:2px; margin:20px 10px 20px; 
+        } 
+    }
+
+    .mouth {
+        height:20px;
+        margin:10px auto 0;
+        border-radius:6px 6px 200px 200px;
+        border-radius:6px 6px 50% 50%;
+    }
+
+    .shadow {
+        height:80px;
+        width:90%;
+        margin:-40px 20px 60px;   
+        -moz-border-radius: 180px / 40px;
+        -webkit-border-radius: 180px / 40px;
+        border-radius: 180px / 40px;
+        border-radius: 100%;
+    }
+
+    @-webkit-keyframes shadow {
+        0% { 
+            margin:-40px 20px 60px -20px; 
+        }
+        50% { 
+            margin:-40px -20px 60px 20px; 
+        } 
+        100% { 
+            margin:-40px 20px 60px -20px; 
+        }
+    } 
+    @-ms-keyframes shadow {
+        0% { 
+            margin:-40px 20px 60px -20px; 
+        }
+        50% { 
+            margin:-40px -20px 60px 20px; 
+        } 
+        100% { 
+            margin:-40px 20px 60px -20px; 
+        }
+    } 
+
+    .face.happy .mouth { 
+        height:70px; 
+        border-radius:6px 6px 200px 200px; 
+        border-radius:6px 6px 75% 75%; 
+    }
+    .face.happy .eyes.happyeyes {
+        border-radius:20px 20px 6px 6px; 
+        height:20px; 
+        transition:.3s; -webkit-animation: none; 
+    }
+
+    .face.sad .mouth { 
+        height:30px; 
+        width: 220px; 
+        border-radius:220px 220px 6px 6px;
+        border-radius:60% 60% 6px 6px; 
+    }
+    .face.sad .mouth.sadmouth { 
+        height:16px; 
+    }
+    
+    .face.mad .mouth.madmouth {
+        height:14px;
+        -webkit-transition:.25s ease-in-out;
+        transition:.25s ease-in-out; 
+    }
+    .face.mad .eyes { 
+        border-radius: 0 0 16px 16px;
+    }
+    .face.mad .eyes.madeyes {
+        height:16px;
+        webkit-transition:.25s ease-in-out;
+        transition:.25s ease-in-out; 
+        -webkit-animation: none; 
+    }
+
+    .face.scared .mouth { 
+        height:40px; 
+        width:30px; 
+        border-radius: 50%; 
+    }
+    .face.scared .mouth.scaredmouth {
+        height:190px; 
+        width:140px; 
+        border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+        -webkit-transition:.2s ease-in-out;
+        transition:.2s ease-in-out; 
+    }
+    .face.scared .eyes.scaredeyes { 
+        height:60px; 
+        width:30px; 
+        transition:.3s; 
+        box-shadow: 0 -6px 0 rgb(23,147,219), 0 -10px 0 black; 
+        -webkit-transition:.2s ease-in-out;
+        transition:.2s ease-in-out;
+         -webkit-animation: none; 
+    }
+
+    .face.shocked .mouth { 
+        border-radius: 50%;
+    }
+    .face.shocked .mouth.shockedmouth { 
+        height:20px; 
+        width:20px; 
+        transition:.2s ease-in-out;
+    }
+    .face.shocked .eyes.shockedeyes { 
+        height: 80px; 
+        width: 80px; 
+        box-shadow: 0 6px 0 rgb(23,147,219), 0 8px 0 black; 
+        -webkit-transition:.2s ease-in-out;
+        transition:.2s ease-in-out; 
+         -webkit-animation: none; 
+    }
+
+    .face.elated .mouth { 
+        height:160px; 
+        border-radius:10px 10px 50% 50%; 
+    }
+    .face.elated .mouth.elatedmouth { 
+        height:120px;
+    }
+    .face.elated .eyes.elatedeyes {
+        height:6px; 
+        width:44px;
+        -webkit-transition:.25s ease-in-out;
+        transition:.25s ease-in-out; 
+        -webkit-animation: none; 
+    }
+}
