@@ -9,5 +9,6 @@
 "highlights" : ["CSS3"],
 "apppreview":"true",
 "appname":"demo.cssanimation",
-"relname":"4.0.0"
+"relname":"4.0.0",
+"projectTypeName": "com.intel.xdk.projecttype.webapp"
 }
