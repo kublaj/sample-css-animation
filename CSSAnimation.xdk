@@ -1,13 +1,13 @@
 {
   "project": {
-    "projectSettingsVersion": "1.1",
+    "projectSettingsVersion": "1.2",
     "creationData": {
       "type": "Demo",
       "createDefaultBuildConfigs": true,
-      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+			"projectTypeName": "com.intel.xdk.projecttype.webapp",
       "src": "https://edge-intel.s3.amazonaws.com/samples/production/sample-cssanimation/sample.zip",
       "sourceDirectory": "www",
-      "projectGuid": "1b1fe641-c33a-4e00-8d8d-9b2578425133",
+			"projectGuid": "00000000-0000-0000-0000-000000000000",
       "lastModifiedDate": 1407892237371,
       "creationDate": 1407889520679
     },
@@ -16,38 +16,8 @@
     "startFile": "index.html",
     "projectFiles": {},
     "projectDirectories": {},
-    "libraries": [
-      {
-        "name": "Cordova",
-        "version": "2.9.0",
-        "data": {
-          "default": true
-        }
-      },
-      {
-        "name": "intelXDK",
-        "version": "4.0.0",
-        "data": {
-          "default": true
-        }
-      }
-    ],
-    "cordovaPlugins": [
-      {
-        "id": "org.apache.cordova.device",
-        "version": "0.2.9",
-        "selectedState": "Included",
-        "data": {},
-        "paramvals": {}
-      },
-      {
-        "id": "org.apache.cordova.splashscreen",
-        "version": "0.3.0",
-        "selectedState": "Included",
-        "data": {},
-        "paramvals": {}
-      }
-    ],
+    "libraries": [],
+    "cordovaPlugins": [],
     "serviceMethods": [],
     "buildConfigurations": {
       "Android": {
@@ -67,8 +37,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "runtime_": "Cordova 3.x",
         "appDescription_": "This demonstration application uses CSS3 animation to display a whimsical character in a variety of expressions.",
@@ -92,8 +62,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "runtime_": "Crosswalk with Cordova 3.x",
         "appDescription_": "This demonstration application uses CSS3 animation to display a whimsical character in a variety of expressions.",
@@ -115,8 +85,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "runtime_": "Cordova 3.x",
         "appDescription_": "This demonstration application uses CSS3 animation to display a whimsical character in a variety of expressions."
@@ -136,12 +106,12 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.0.1",
         "runtime_": "Cordova 3.x",
         "appDescription_": "This demonstration application uses CSS3 animation to display a whimsical character in a variety of expressions.",
-        "appAuthor_": ""
+				"appAuthor_": "Intel XDK",
       },
       "WindowsPhone8": {
         "platform_": "wp8",
@@ -156,8 +126,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+				"cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "1.0.0.0",
         "runtime_": "Cordova 3.x"
       }
