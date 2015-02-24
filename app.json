@@ -5,9 +5,9 @@
 "description":"This demonstration application uses CSS3 animation to display a whimsical character in a variety of expressions.",
 "articleUrl":"http://software.intel.com/en-us/articles/intel-xdk-css-animation-sample",
 "keywords":["CSS3"],
-"visible" : "true",
+"visible" : "false",
 "highlights" : ["CSS3"],
-"apppreview":"true",
+"apppreview":"false",
 "appname":"demo.cssanimation",
 "projectTypeName": "com.intel.xdk.projecttype.webapp"
 }
