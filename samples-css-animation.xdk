@@ -2,14 +2,14 @@
   "project": {
     "projectSettingsVersion": "1.2",
     "creationData": {
-      "type": "Demo",
-      "createDefaultBuildConfigs": true,
-			"projectTypeName": "com.intel.xdk.projecttype.webapp",
-      "src": "https://edge-intel.s3.amazonaws.com/samples/production/sample-cssanimation/sample.zip",
-      "sourceDirectory": "www",
-			"projectGuid": "00000000-0000-0000-0000-000000000000",
-      "lastModifiedDate": 1407892237371,
-      "creationDate": 1407889520679
+        "type": "Demo",
+        "createDefaultBuildConfigs": true,
+        "projectTypeName": "com.intel.xdk.projecttype.webapp",
+        "src": "https://edge-intel.s3.amazonaws.com/samples/production/sample-cssanimation/sample.zip",
+        "sourceDirectory": "www",
+        "projectGuid": "00000000-0000-0000-0000-000000000000",
+        "lastModifiedDate": 1407892237371,
+        "creationDate": 1407889520679
     },
     "sourceDirectory": "www",
     "cordovaPluginsDirectory": "plugins",
@@ -111,25 +111,7 @@
         "appVersion_": "0.0.0.1",
         "runtime_": "Cordova 3.x",
         "appDescription_": "This demonstration application uses CSS3 animation to display a whimsical character in a variety of expressions.",
-				"appAuthor_": "Intel XDK",
-      },
-      "WindowsPhone8": {
-        "platform_": "wp8",
-        "name_": "WindowsPhone8",
-        "preferences_": {},
-        "isActive_": true,
-        "appName_": "CSSAnimation",
-        "appID_": "not.yet.specified",
-        "appAccess_": "*",
-        "icons_": [],
-        "splashes_": [],
-        "iosProvs_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-				"cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
-        "appVersion_": "1.0.0.0",
-        "runtime_": "Cordova 3.x"
+		"appAuthor_": "Intel XDK"
       }
     }
   }

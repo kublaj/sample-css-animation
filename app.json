@@ -1,5 +1,5 @@
 {
-"reponame":"sample-css-animation",
+"repoName":"sample-css-animation",
 "title":"CSS Animation",
 "tooltip":"This demo shows how to add CSS3 Animation to an HTML5 application.",
 "description":"This demonstration application uses CSS3 animation to display a whimsical character in a variety of expressions.",
@@ -9,6 +9,5 @@
 "highlights" : ["CSS3"],
 "apppreview":"true",
 "appname":"demo.cssanimation",
-"relname":"4.0.0",
 "projectTypeName": "com.intel.xdk.projecttype.webapp"
 }
